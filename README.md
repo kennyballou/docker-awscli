@@ -2,6 +2,18 @@
 
 Alpine Linux AWS CLI Container
 
+## Running ##
+
+Running the container should be as simple as passing in your AWS credentials,
+and providing a command:
+
+```
+docker run --rm -v ~/.aws:/root/.aws:ro kennyballou/docker-awscli {aws_command}
+```
+
+Such a invocation can be abstracted to a shell script, as found in the `bin`
+directory.
+
 ## LICENSE ##
 
 This code is provided AS-IS, WITHOUT warranty under the terms of the GNU
