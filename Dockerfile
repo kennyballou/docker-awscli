@@ -11,4 +11,6 @@ RUN apk -Uuv add \
     py-pip && \
     rm /var/cache/apk/*
 
+WORKDIR "/tmp"
+
 ENTRYPOINT ["aws"]
