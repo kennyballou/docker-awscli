@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER kballou@devnulllabs.io
 
-ENV AWSCLI_VERSION="1.14.9"
+ENV AWSCLI_VERSION="1.14.10"
 
 RUN apk -Uuv add \
     groff \
